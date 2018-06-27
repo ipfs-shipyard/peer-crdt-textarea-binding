@@ -11,7 +11,10 @@
   "dependencies": {
     "async": "^2.6.1",
     "big.js": "",
+    "fast-diff": "^1.1.2",
     "ipfs": "",
+    "peer-crdt": "^0.8.2",
+    "peer-crdt-ipfs": "^0.4.0",
     "realtime-text": "^1.0.1",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.4",
