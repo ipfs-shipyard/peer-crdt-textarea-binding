@@ -2,7 +2,7 @@
   "name": "peer-crdt-pad",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "TextareaBinding.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
