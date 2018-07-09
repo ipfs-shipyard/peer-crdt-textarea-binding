@@ -23,7 +23,6 @@ module.exports = class TextareaBinding {
                     cursor += change.atom.length;
                 }
                 if (change.type === 'delete' && change.pos <= cursor) {
-                    console.log('Cursor', cursor, 'Pos', change.pos, 'Length', change.length)
                     cursor -= Math.min(change.length, cursor - change.pos);
                 }
 
