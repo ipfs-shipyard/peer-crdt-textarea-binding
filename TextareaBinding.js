@@ -64,11 +64,11 @@ module.exports = class TextareaBinding {
         for (const edit of diff) {
           switch (edit.type) {
             case 'insert':
-              const insertRes = await data.insertAt(edit.pos, edit.text)
+              const insertRes = await this.crdt.insertAt(edit.pos, edit.text)
               this.localChanges.add(insertRes[0]);
               break
             case 'erase':
-              const deleteRes = await data.removeAt(edit.pos - edit.num, edit.num)
+              const deleteRes = await this.crdt.removeAt(edit.pos - edit.num, edit.num)
               this.localChanges.add(deleteRes[0]);
               break
           }
